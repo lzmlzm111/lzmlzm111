@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>毕业设计</title>
+<link rel="stylesheet" type="text/css" href="css/index.css" >
+<link rel="stylesheet" type="text/css" href="css/lightbox.css" >
+<style type="text/css">
+zt {
+    height: 20px;
+    width: 20px;
+}
+</style>
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_CheckFlashVersion(reqVerStr,msg){
+  with(navigator){
+    var isIE  = (appVersion.indexOf("MSIE") != -1 && userAgent.indexOf("Opera") == -1);
+    var isWin = (appVersion.toLowerCase().indexOf("win") != -1);
+    if (!isIE || !isWin){  
+      var flashVer = -1;
+      if (plugins && plugins.length > 0){
+        var desc = plugins["Shockwave Flash"] ? plugins["Shockwave Flash"].description : "";
+        desc = plugins["Shockwave Flash 2.0"] ? plugins["Shockwave Flash 2.0"].description : desc;
+        if (desc == "") flashVer = -1;
+        else{
+          var descArr = desc.split(" ");
+          var tempArrMajor = descArr[2].split(".");
+          var verMajor = tempArrMajor[0];
+          var tempArrMinor = (descArr[3] != "") ? descArr[3].split("r") : descArr[4].split("r");
+          var verMinor = (tempArrMinor[1] > 0) ? tempArrMinor[1] : 0;
+          flashVer =  parseFloat(verMajor + "." + verMinor);
+        }
+      }
+      // WebTV has Flash Player 4 or lower -- too low for video
+      else if (userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 4.0;
+
+      var verArr = reqVerStr.split(",");
+      var reqVer = parseFloat(verArr[0] + "." + verArr[2]);
+  
+      if (flashVer < reqVer){
+        if (confirm(msg))
+          window.location = "http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash";
+      }
+    }
+  } 
+}
+//-->
+</script>
+<script src="js/jquery-1.4.4.min.js" ></script>
+<script src="js/slides.min.jquery.js" ></script>
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'images/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log(current);
+					};
+				}
+			});
+		});
+</script>
+<script src="Scripts/AC_RunActiveContent.js"  type="text/javascript"></script>
+</head>
+
+<body onload="MM_preloadImages('images/nav1a.jpg');MM_CheckFlashVersion('7,0,0,0','本页内容需要使用较新的 Adobe Flash Player 版本。是否现在下载它？');">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+<center>
+<!--顶部开始-->
+<div class="banner_bg">
+<div class="banner">
+<div class="logo"><a href="index.html" ><img src="img/LOGO.png" width="86" height="85" alt=""/></a></div>
+
+<div class="daohang">
+<div class="daohangA"><a href="GWC.html" ><img src="images/tb1.gif"  /></a><img src="images/tb2.gif"  /><a href="DL.html"><img src="images/tb3.gif"  /></a><img src="images/tb4.gif"  /><img src="images/tb5.gif"  /></div>
+<div class="daohangB"><input name="" type="text" style="width:180px; height:17px; border:1px solid #CCCCCC; vertical-align:middle" /><input name="" type="button" value=" " class="sousuo"/></div>
+</div>
+<div class="clearit"></div>
+
+</div>
+</div>
+<!--顶部结束-->
+<div class="daohangC">
+  <p><a href="index.html" >首页</a>　　<a href="LYQ.html" >商品分类　</a>　<a href="Jianjie.html" >云层服饰简介</a>   <a href="bysj.html" >毕业设计</a></p>
+</div>
+<div id="page_bg">
+<div id="page">
+
+<!--中部开始-->
+<!--左部开始-->
+<div class="yingxiangzuo">
+  <p> <strong>网络拓扑图：</strong></p>
+  <p>&nbsp;</p>
+</div>
+<!--左部结束-->
+
+<!--右部开始--><!--右部结束-->
+
+<div class="clearit"></div>
+<form id="form1" name="form1" method="post" action="">
+  <p><img src="img/网络拓扑图.jpg" width="978" height="705" alt=""/></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</form>
+<!--中部结束-->
+
+</div></div>
+<div id="page_bg">
+<div class="yingxiang">
+  <p>&nbsp;</p>
+<div class="foot" style="padding:20px 0 100px;">
+  <div class="clearit">
+    <ol>
+      <li>网络设计目标： </li>
+    </ol>
+    <p>Vlan划分：各个部门不同的vlan，为各个vlan分配合适的IP地址网段，做到无冲突，尽可能的节省IP地址。 <br />
+      访问控制：配置ACL，允许一下部门访问服务器，拒绝其他部门访问。 </p>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p><strong>综合布线平面图：</strong></p>
+  <p><img src="img/综合布线平面图.jpg" width="987" height="705" alt=""/></p>
+</div>
+<div class="foot" style="padding:20px 0 100px;">
+  <div class="clearit">
+    <p>综合布线中，整个企业分为四部两室一娱，即客服部、运营部、技术部、财务部、会议室、董事长办公室，还有娱乐区域。 </p>
+  </div>
+</div>
+<p>&nbsp;</p>
+</div></div>
+
+<!--页脚开始-->
+<div class="foot_bg">
+
+<div class="foot">
+<div class="foot1"> 　　　 </div>
+<div class="foot2"><h1>CATEGORIES</h1></div>
+<div class="foot3"><h1>NEW ARRIVAL</h1></div>
+<div class="foot4"><h1>CUSTOMIZE</h1></div>
+</div>
+
+</div>
+
+<div class="foot" style="padding:20px 0 100px;">
+<div class="foot1"> 　　　 <img src="img/LOGO.jpg" width="200" height="200" alt=""/></div>
+<div class="foot2"><p>店铺| Good's<br />
+杂货铺 | Inspiration<br />
+品牌故事 | Studio News<br />
+精选 | Selection</p>
+</div>
+<div class="foot3"><p>宝贝分类 babyi｜classification </p>
+  <p>连衣裙 | one-piece dress</p>
+  <p>上衣 | upper garment</p>
+  <p>裤子 | pants</p>
+  <p>鞋子 | shoe</p>
+  <p>帽子 | cap</p>
+  <p>饰品 | ornaments</p>
+</div>
+<div class="foot4"><p><a href="DL.html">账户</a><br />
+  客户服务<br />
+  礼券<br />
+  推荐朋友<br />
+  心愿单搜索</p>
+</div>
+<div class="clearit"></div>
+</div>
+
+<!--页脚结束-->
+
+
+</center>
+
+</body>
+</html>

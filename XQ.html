@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>商品详情页</title>
+<link rel="stylesheet" type="text/css" href="css/index.css" >
+<link rel="stylesheet" type="text/css" href="css/lightbox.css" >
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script src="js/jquery-1.4.4.min.js" ></script>
+<script src="js/slides.min.jquery.js" ></script>
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'images/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log(current);
+					};
+				}
+			});
+		});
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/nav1a.jpg')">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+<center>
+<!--顶部开始-->
+<div class="banner_bg">
+<div class="banner">
+<div class="logo"><a href="index.html" ><img src="img/LOGO.png"  /></a></div>
+
+<div class="daohang">
+<div class="daohangA"><a href="GWC.html" ><img src="images/tb1.gif"  /></a><img src="images/tb2.gif"  /><a href="DL.html"><img src="images/tb3.gif"  /></a><img src="images/tb4.gif"  /><img src="images/tb5.gif"  /></div>
+<div class="daohangB"><input name="" type="text" style="width:180px; height:17px; border:1px solid #CCCCCC; vertical-align:middle" /><input name="" type="button" value=" " class="sousuo"/></div>
+</div>
+<div class="clearit"></div>
+
+</div>
+</div>
+<!--顶部结束-->
+<div class="daohangC">
+  <p><a href="index.html" >首页</a>　　<a href="gouwuche.html" >商品分类</a>　　<a href="Jianjie.html" >云层服饰简介</a> <a href="bysj.html" >毕业设计</a></p>
+</div>
+<div id="page_bg">
+<div id="page">
+
+<!--中部开始-->
+<div class="zhongjian">
+<!--左部开始-->
+<div class="zuobu">
+  <p><img src="img/详情页图片/2.jpg" width="700" height="704" alt=""/></p>
+  <p><img src="img/详情页图片/1.jpg" width="700"  /></p>
+  <p><img src="img/详情页图片/3.jpg" width="700" height="704" alt=""/></p>
+  <p><img src="img/详情页图片/5.jpg" width="700" height="704" alt=""/></p>
+  <p><img src="img/详情页图片/7.jpg" width="700" height="704" alt=""/></p>
+  <p><img src="img/详情页图片/8.jpg" width="700" height="704" alt=""/></p>
+  <p><img src="img/详情页图片/9.jpg" width="700" height="704" alt=""/></p>
+  <p>&nbsp;</p>
+</div>
+<p><!--左部结束-->
+  
+  <!--右部开始-->
+</p>
+<div class="youbu2">
+  <h3>RMB 69</h3>
+  <p>&nbsp;</p>
+  <p><img src="images/xq1.jpg"  /></p>
+  <p>&nbsp;</p>
+  <p><a href="GWC.html" ><img src="images/xq2.jpg"  /></a></p>
+  <p>&nbsp;</p>
+  <p><img src="images/xq3.jpg"  /></p>
+  <p>&nbsp;</p>
+  <p><img src="images/xq4.jpg"  />  </p>
+  <h3 data-spm-anchor-id="2013.1.0.i11.73173417foD5tD">价格说明</h3>
+  <p>划线价格</p>
+  <p>指商品的专柜价、吊牌价、正品零售价、厂商指导价或该商品的曾经展示过的销售价等，<strong>并非原价</strong>，仅供参考。</p>
+  <p>未划线价格</p>
+  <p>指商品的<strong>实时标价</strong>，不因表述的差异改变性质。具体成交价格根据商品参加活动，或会员使用优惠券、积分等发生变化，最终以订单结算页价格为准。</p>
+  <p>商家详情页（含主图）以图片或文字形式标注的一口价、促销价、优惠价等价格可能是在使用优惠券、满减或特定优惠活动和时段等情形下的价格，具体请以结算页面的标价、优惠条件或活动规则为准。</p>
+  <p>此说明仅当出现价格比较时有效，具体请参见《淘宝价格发布规范》。若商家单独对划线价格进行说明的，以商家的表述为准。</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <h3>运输说明：</h3>
+  <p>本商品仅限国内地区订购；<br />
+    如要求在特别时段送达，我们需第三方为您提供限时服务。<br />
+    新疆内蒙古等地区需要额外运费，详情可询问店铺客服人员。<br />
+    请在确认订单时留意相关选项。</p>
+  <p>特别提醒：周日及法定节假日店休不发货。</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <h3>退换货说明：</h3>
+  <p>下单成功后，我们将根据您的要求制作与发货。如无特别情况，<br />
+    我们不会再与您联系确认订单。</p>
+  <p>订单一旦生成，如需取消或修改订单信息（地址，送达日期），<br />
+    请务必于预定收货日期的48小时之前提出。</p>
+  <p>如有质量问题请在签收后24小时内联系客服。</p>
+</div>
+<!--右部结束-->
+
+<div class="clearit"></div>
+
+<div class="xihuan">
+<h4>你也许会喜欢以下产品：</h4>
+<table width="685" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="172"><img src="img/连衣裙图片/欧美跨境INS新款网红连衣裙性感蕾丝拼接花边紧身开叉露背吊带裙.jpg"  width="150" height="150" /></td>
+    <td width="174"><img src="img/上衣图片/2021新款女装潮流T恤.jpg"  width="150" height="150" /></td>
+    <td width="179"><img src="img/上衣图片/2021欧美wish新款女装时尚纯色木耳边排扣超短款露脐短袖上衣.jpg"  width="150" height="150" /></td>
+    <td width="160"><img src="img/上衣图片/2021速卖通ins网红街头辣妹印花胸前系带显瘦背心.jpg"  width="147" height="150" /></td>
+  </tr>
+</table>
+
+</div>
+
+</div>
+<!--中部结束-->
+
+
+
+
+
+</div></div>
+
+
+<!--页脚开始-->
+<div class="foot_bg">
+
+<div class="foot">
+<div class="foot1"> 　　　 </div>
+<div class="foot2"><h1>CATEGORIES</h1></div>
+<div class="foot3"><h1>NEW ARRIVAL</h1></div>
+<div class="foot4"><h1>CUSTOMIZE</h1></div>
+</div>
+
+</div>
+
+<div class="foot" style="padding:20px 0 100px;">
+<div class="foot1"> 　　　 <img src="img/LOGO.jpg"  width="200" height="200" /></div>
+<div class="foot2"><p>店铺| Good's<br />
+杂货铺 | Inspiration<br />
+品牌故事 | Studio News<br />
+精选 | Selection</p>
+</div>
+<div class="foot3"><p>宝贝分类 babyi｜classification </p>
+  <p>连衣裙 | one-piece dress</p>
+  <p>上衣 | upper garment</p>
+  <p>裤子 | pants</p>
+  <p>鞋子 | shoe</p>
+  <p>帽子 | cap</p>
+  <p>饰品 | ornaments</p>
+</div>
+<div class="foot4"><p><a href="DL.html">账户</a><br />
+  客户服务<br />
+  礼券<br />
+  推荐朋友<br />
+  心愿单搜索</p>
+</div>
+<div class="clearit"></div>
+</div>
+
+<!--页脚结束-->
+
+
+</center>
+
+</body>
+</html>

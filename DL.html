@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录页面</title>
+<link rel="stylesheet" type="text/css" href="css/index.css" >
+</head>
+
+<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+<center>
+<!--顶部开始-->
+<div class="banner_bg">
+<div class="banner">
+<div class="logo"><a href="index.html" ><img src="img/LOGO.png"  /></a></div>
+
+<div class="daohang">
+<div class="daohangA"><a href="GWC.html" ><img src="images/tb1.gif"  /></a><img src="images/tb2.gif"  /><img src="images/tb3.gif"  /><img src="images/tb4.gif"  /><img src="images/tb5.gif"  /></div>
+<div class="daohangB"><input name="" type="text" style="width:180px; height:17px; border:1px solid #CCCCCC; vertical-align:middle" /><input name="" type="button" value=" " class="sousuo"/></div>
+</div>
+<div class="clearit"></div>
+
+</div>
+</div>
+<!--顶部结束-->
+<div class="daohangC">
+  <p><a href="index.html" >首页</a>　　<a href="LYQ.html" >商品分类</a>　　<a href="Jianjie.html" >云层服饰简介</a> <a href="bysj.html" >毕业设计</a></p>
+</div>
+<div id="page_bg">
+<div id="page">
+
+
+<!--中部开始-->
+<div class="content" style=" padding:0">
+
+<div class="jiaodian"><div class="lunhuan">  <script type="text/javascript" language="JavaScript">
+
+var widths=593;    
+var w=2;
+var widthss=widths+w;
+var heights=442; 
+var heightss=heightss+w;
+var heightt=20;
+var counts=3;     
+
+img1=new Image();img1.src='images/j1.jpg';
+url1=new Image();url1.src='#';
+
+
+img2=new Image();img2.src='images/j2.jpg';
+url2=new Image();url2.src='#';
+
+
+img3=new Image();img3.src='images/j3.jpg';
+url3=new Image();url3.src='#';
+
+
+
+
+var nn=1; //当前所显示的滚动图
+var key=0;    //标识是否为第一次开始执行
+var tt;    //标识作用
+
+function change_img()
+{
+if(key==0){key=1;} //如果第一次执行KEY=1，表示已经执行过一次了。
+else if(document.all)//document.all仅IE6/7认识，firefox不会执行此段内容
+{
+document.getElementById("pic").filters[0].Apply(); //将滤镜应用到对像上
+document.getElementById("pic").filters[0].Play(duration=2);  //开始转换
+document.getElementById("pic").filters[0].Transition=23;//转换效果
+}
+
+eval('document.getElementById("pic").src=img'+nn+'.src');     //替换图片
+eval('document.getElementById("url").href=url'+nn+'.src'); //替换URL
+ //替换ALT
+
+for (var i=1;i<=counts;i++)
+{
+    document.getElementById("xxjdjj"+i).className='axx';     
+}
+document.getElementById("xxjdjj"+nn).className='bxx';  //将当前页面的ID设置为选中状态
+nn++;
+if(nn>counts){nn=1;}    //如果ID大于总图片数量。则从头开始循环
+tt=setTimeout('change_img()',4000);    //在4秒后重新执行change_img()方法.
+}
+function changeimg(n)//点击黑条上的链接执行的方法。
+{
+nn=n; //当前页面的ID等于传入的N值,
+window.clearInterval(tt); //清除用于循环的TT
+//重新执行change_img();但change_img()内所调用的图片ID已经在此处被修改,会从新ID处开始执行.
+change_img();
+}
+//样式表
+document.write('<style>');
+document.write('.axx{padding:1px 6px;margin-left:3px;border-left:#cccccc 1px solid;font-size:12px;}');
+document.write('a.axx:link,a.axx:visited{text-decoration:none;color:#666;');
+document.write('line-height:12px;font:12px sans-serif;background-color:#eee;border:1px solid #666}');
+
+document.write('.bxx{padding:1px 6px;margin-left:3px;border-left:#cccccc 1px solid;}');
+document.write('a.bxx:link,a.bxx:visited{text-decoration:none;color:#111;');
+document.write('line-height:12px;font:12px sans-serif;background-color:#fff;border:1px solid #111}');
+
+document.write('</style>');
+//内容部分
+document.write('<div style="width:'+widthss+'px;height:'+heights+'px;');
+document.write('overflow:hidden;text-overflow:clip;float:left;">');
+document.write('<div><a id="url" target="_blank"><img id="pic" ');
+document.write('style="border:0;');
+document.write('FILTER: progid:DXImageTransform.Microsoft.RevealTrans (duration=2,transition=23)"');
+document.write(' width='+widths+' height='+heights+' /></a></div>');
+document.write('<div style="filter:alpha(style=1,opacity=10,finishOpacity=90);');
+document.write('width:100%-2px;text-align:right;');
+document.write('top:-19px;position:relative;margin:-5px 9px 0 1px;height:22px;line-height:22px;');
+document.write('z-index:4000;"><div style="height:22px;line-height:22px;padding:2px 0 0 0;">');
+
+
+for(var i=1;i<counts+1;i++)
+{
+document.write('<a href="javascript:changeimg('+i+');" id="xxjdjj'+i+'"');
+document.write(' class="axx" target="_self">'+i+'</a>');
+}
+document.write('</div></div></div>');
+
+
+change_img();
+
+
+</script>
+</div>
+<div class="j4"><img src="images/礼券.jpg" width="590"  /></div>
+</div>
+
+<div class="denglu">
+<ul>
+<li><label>用户名：</label>　　<input name="" type="text" class="denglu_in" /></li>
+<li><label>密　码：</label>　　<input name="" type="password"  class="denglu_in"/></li>
+<li><label><a href="#" style="font-size:12px;color:#666666;">忘记密码？</a></label>　<input name="" type="submit" value=" " class="denglu_btn"/></li>
+</ul>
+
+<div class="erwei"><p>扫描二维码<br />
+  添加帅哥微信</p><img src="img/公司人员照片/二维码.jpg" width="100" height="95"  /></div>
+</div>
+<div class="clearit"></div>
+
+</div>
+<!--中部结束-->
+
+
+</div>
+</div>
+</center>
+
+</body>
+</html>
